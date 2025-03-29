@@ -4,11 +4,19 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import navLinks from "../util/navLinks";
 
-export default function NavDesktop() {
+interface NavDesktopProps {
+    isScrolled: boolean;
+}
+
+export default function NavDesktop({ isScrolled }: NavDesktopProps) {
     const pathname = usePathname();
 
     return (
-        <nav className={`hidden md:flex gap-6 `}>
+        <nav
+            className={`hidden md:flex gap-6 transition-all duration-300 ${
+                isScrolled ? "py-1" : "py-3"
+            }`}
+        >
             {navLinks.map(({ name, path }) => (
                 <Link
                     key={name}
