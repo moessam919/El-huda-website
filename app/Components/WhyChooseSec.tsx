@@ -24,7 +24,7 @@ const WhyChooseSec = () => {
             </div>
 
             <div className="mt-4 space-y-4">
-                <p className="text-lg">
+                <p className="text-lg max-w-5xl mx-auto">
                     With decades of experience{" "}
                     <span className="text-[#8AB420] font-semibold">
                         El-Huda Import & Export
@@ -35,7 +35,7 @@ const WhyChooseSec = () => {
                     that every product meets international standards and exceeds
                     customer expectations.
                 </p>
-                <p className="text-lg">
+                <p className="text-lg max-w-5xl mx-auto">
                     <span className="text-[#8AB420] font-semibold">
                         No matter how many companies
                     </span>{" "}

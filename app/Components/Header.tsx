@@ -1,4 +1,3 @@
-import { Facebook, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -17,8 +16,14 @@ const Header = () => {
                         rel="noopener noreferrer"
                         className="group"
                     >
-                        <div className="bg-white p-1 rounded-full size-7 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
-                            <Facebook className="text-[#296628] size-5" />
+                        <div className="p-1 rounded-full size-7 md:size-9 md:size-9 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+                            <Image
+                                src="/Face.png"
+                                alt="icon logo"
+                                width={1920}
+                                height={1080}
+                                className="md:w-30"
+                            />
                         </div>
                     </Link>
 
@@ -28,8 +33,14 @@ const Header = () => {
                         rel="noopener noreferrer"
                         className="group"
                     >
-                        <div className="bg-white p-1 rounded-full size-7 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
-                            <Instagram className="text-[#296628] size-5" />
+                        <div className=" p-1 rounded-full size-7 md:size-9 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+                            <Image
+                                src="/Insta.png"
+                                alt="icon logo"
+                                width={50}
+                                height={40}
+                                className="md:w-30"
+                            />{" "}
                         </div>
                     </Link>
 
@@ -39,8 +50,14 @@ const Header = () => {
                         rel="noopener noreferrer"
                         className="group"
                     >
-                        <div className="bg-white p-1 rounded-full size-7 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
-                            <Linkedin className="text-[#296628] size-5" />
+                        <div className=" p-1 rounded-full size-7 md:size-9 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+                            <Image
+                                src="/Link.png"
+                                alt="icon logo"
+                                width={50}
+                                height={40}
+                                className="md:w-30"
+                            />{" "}
                         </div>
                     </Link>
                 </div>
