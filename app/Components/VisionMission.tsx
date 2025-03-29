@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const VisionMission: React.FC = () => {
     return (
@@ -18,12 +19,15 @@ const VisionMission: React.FC = () => {
                             markets with exceptional quality and reliability.{" "}
                         </p>
                         <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-16">
-                            <div className="bg-[#1A3321] rounded-full p-6 inline-block">
+                            <Link
+                                href="/AboutUs#Vision"
+                                className="bg-[#1A3321] rounded-full p-6 inline-block"
+                            >
                                 <ArrowRight
                                     className="text-[#8AB420]"
                                     size={29}
                                 />
-                            </div>
+                            </Link>
                         </div>
                     </div>
 
@@ -39,12 +43,15 @@ const VisionMission: React.FC = () => {
                             excellence.
                         </p>
                         <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-16">
-                            <div className="bg-[#1A3321] rounded-full p-6 inline-block">
+                            <Link
+                                href="/AboutUs#Mission"
+                                className="bg-[#1A3321] rounded-full p-6 inline-block"
+                            >
                                 <ArrowRight
                                     className="text-[#8AB420]"
                                     size={29}
                                 />
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

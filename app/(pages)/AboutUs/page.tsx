@@ -67,8 +67,8 @@ const page = () => {
                         </p>
                     </div>
                 </div>
-                <div>
-                    <p className="mt-7 text-xl">
+                <div id="Mission">
+                    <p className="mt-7 text-xl" id="Vision">
                         {" "}
                         <span className="text-[#8AB420] font-semibold">
                             At El-Huda,
