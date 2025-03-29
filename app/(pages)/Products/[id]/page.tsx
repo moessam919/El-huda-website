@@ -1,11 +1,9 @@
-// src/app/products/[id]/page.tsx
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { products } from "@/app/data/products";
 
-// Simulate dynamic data fetching (replace with real API call if available)
 async function getProduct(id: string) {
     // Add artificial delay to simulate network request
     await new Promise((resolve) => setTimeout(resolve, 200));
