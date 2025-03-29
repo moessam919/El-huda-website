@@ -29,7 +29,7 @@ export const products: Product[] = [
     {
         id: "white-kidney-beans",
         name: "White kidney beans",
-        image: "/WhitekidneyBeans.png",
+        image: "/WhiteKidneyBeans.png",
         description:
             "White kidney beans, also known as Navy Beans, are one of the most nutritious and versatile legumes. They are rich in plant-based protein, fiber, and essential vitamins such as B vitamins, iron, and magnesium. These beans are widely used in soups, stews, salads, and various international cuisines, making them a staple in kitchens around the world.",
         details: {
@@ -211,7 +211,8 @@ export const mainProducts: Product[] = [
     {
         id: "white-kidney-beans",
         name: "White kidney beans",
-        image: "/WhitekidneyBeans.png",
+        image: "/WhiteKidneyBeans.png",
+
         details: {},
     },
     {
