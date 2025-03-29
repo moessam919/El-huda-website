@@ -1,6 +1,12 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+    title: "El Huda - Contact",
+    description: "Contact page for El Huda Copmany",
+};
 
 const page = () => {
     return (

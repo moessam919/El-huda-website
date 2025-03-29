@@ -1,5 +1,10 @@
+import { Metadata } from "next";
 import Image from "next/image";
 
+export const metadata: Metadata = {
+    title: "El Huda - About Us",
+    description: "About Us page for El Huda Copmany",
+};
 const page = () => {
     return (
         <div className="mt-10  ">
