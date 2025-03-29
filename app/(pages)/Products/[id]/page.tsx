@@ -1,19 +1,12 @@
-import React from "react";
+import { Product, products } from "@/app/data/products";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { products } from "@/app/data/products";
 
-async function getProduct(id: string) {
-    // Add artificial delay to simulate network request
+async function getProduct(id: string): Promise<Product | undefined> {
+    // Simulate API call delay
     await new Promise((resolve) => setTimeout(resolve, 200));
-
-    const product = products.find((product) => product.id === id);
-
-    // Simulate 10% chance of product not being available
-    if (Math.random() < 0.1) return null;
-
-    return product;
+    return products.find((product) => product.id === id);
 }
 
 export async function generateStaticParams() {
@@ -22,12 +15,14 @@ export async function generateStaticParams() {
     }));
 }
 
-export default async function ProductDetailPage({
-    params,
-}: {
-    params: { id: string };
-}) {
-    const product = await getProduct(params.id);
+interface PageProps {
+    params: Promise<{ id: string }>;
+}
+
+export default async function ProductDetailPage({ params }: PageProps) {
+    // Await the params object before accessing its properties
+    const { id } = await params;
+    const product = await getProduct(id);
 
     if (!product) {
         notFound();
@@ -36,7 +31,6 @@ export default async function ProductDetailPage({
     const detailEntries = Object.entries(product.details ?? {}).filter(
         ([, value]) => value !== undefined && value !== null
     );
-
     const healthBenefits = product.details?.healthBenefits;
 
     return (
