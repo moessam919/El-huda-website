@@ -17,7 +17,7 @@ const VisionMission: React.FC = () => {
                             herbs, and seeds, ensuring they reach international
                             markets with exceptional quality and reliability.{" "}
                         </p>
-                        <div className="absolute -bottom-16 left-55 sm:left-30 lg:left-45 xl:left-80   mr-4">
+                        <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-16">
                             <div className="bg-[#1A3321] rounded-full p-6 inline-block">
                                 <ArrowRight
                                     className="text-[#8AB420]"
@@ -28,17 +28,17 @@ const VisionMission: React.FC = () => {
                     </div>
 
                     {/* Mission Section */}
-                    <div className="bg-[#1A3321] p-6 rounded-lg relative">
-                        <h2 className="text-2xl font-bold text-[#8AB420] mb-4  uppercase tracking-wider ">
+                    <div className="bg-[#1A3321] p-6 pb-20 rounded-lg relative">
+                        <h2 className="text-2xl font-bold text-[#8AB420] mb-4 uppercase tracking-wider">
                             Our Mission
                         </h2>
-                        <p className="text-white/90 leading-relaxed ">
+                        <p className="text-white/90 leading-relaxed">
                             At El-Huda Import & Export, our mission is to
                             deliver the finest Egyptian agricultural products to
                             the world with unmatched quality, reliability, and
                             excellence.
                         </p>
-                        <div className="absolute -bottom-16 left-55 sm:left-30 lg:left-45 xl:left-80   mr-4">
+                        <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-16">
                             <div className="bg-[#1A3321] rounded-full p-6 inline-block">
                                 <ArrowRight
                                     className="text-[#8AB420]"
