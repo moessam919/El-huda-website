@@ -16,9 +16,9 @@ const Header = () => {
                         rel="noopener noreferrer"
                         className="group"
                     >
-                        <div className="p-1 rounded-full size-7 md:size-9 md:size-9 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+                        <div className="p-1 rounded-full size-7 md:size-9  group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
                             <Image
-                                src="/Face.png"
+                                src="/face.png"
                                 alt="icon logo"
                                 width={1920}
                                 height={1080}
