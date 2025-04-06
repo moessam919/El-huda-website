@@ -30,7 +30,7 @@ const page = () => {
                                 >
                                     <div className="relative">
                                         <Image
-                                            src={product.image}
+                                            src={product.image || ""}
                                             alt={`${product.name}`}
                                             width={400}
                                             height={400}
