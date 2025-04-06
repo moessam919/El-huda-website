@@ -16,11 +16,11 @@ const HomeSlider: React.FC = () => {
     // Slider images
     const slides: Slide[] = [
         {
-            image: "/Rectangle.jpg",
+            image: "/indian-beans-pulses.jpg",
             alt: "Variety of Beans Collection",
         },
         {
-            image: "/collection-raw-cereals-beans-seeds.jpg",
+            image: "/collage-various-beans.jpg",
             alt: "Premium Legumes Display",
         },
         {
