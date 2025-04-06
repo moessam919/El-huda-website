@@ -166,7 +166,18 @@ const page = () => {
                             </h2>
 
                             {/* Map Placeholder */}
-                            <div className="bg-white p-2 rounded shadow-md"></div>
+                            <div className="bg-white p-2 rounded shadow-md">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d426.56257820152535!2d29.8810753!3d31.2068568!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c171310c18ed%3A0xe9141308daf25ce2!2sAl%20Dahab%20Foul!5e0!3m2!1sar!2seg!4v1743943923269!5m2!1sar!2seg"
+                                    width="100%"
+                                    height="290"
+                                    style={{ border: 0 }}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    className="w-full rounded-lg"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
