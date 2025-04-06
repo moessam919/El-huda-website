@@ -74,7 +74,7 @@ const AboutSec = () => {
                         and packaging technology, and a commitment to
                         excellence, we ensure that our products meet and exceed
                         global expectations. With a strong global network and
-                        decades of experience, A1-Huda continues to expand its
+                        decades of experience, El-Huda continues to expand its
                         international presence, bringing the best of Egypt to
                         the world. Quality, trust, and excellence—this is the
                         El-Huda promise.{" "}
