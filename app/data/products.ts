@@ -291,7 +291,7 @@ export const mainProducts: Product[] = [
     {
         id: "sesame-seeds",
         name: "Golden Sesame seeds",
-        image: "/SesameSeeds.jFif",
+        image: "/SesameSeeds.jfif",
         details: {},
     },
     {
