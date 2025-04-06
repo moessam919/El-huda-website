@@ -16,19 +16,19 @@ const HomeSlider: React.FC = () => {
     // Slider images
     const slides: Slide[] = [
         {
-            image: "/Rectangle.png",
+            image: "/Rectangle.jpg",
             alt: "Variety of Beans Collection",
         },
         {
-            image: "/Rectangle.png",
+            image: "/collection-raw-cereals-beans-seeds.jpg",
             alt: "Premium Legumes Display",
         },
         {
-            image: "/Rectangle.png",
+            image: "/Rectangle.jpg",
             alt: "Fresh Legumes Selection",
         },
         {
-            image: "/Rectangle.png",
+            image: "/collection-raw-cereals-beans-seeds.jpg",
             alt: "Organic Beans Assortment",
         },
     ];
@@ -59,8 +59,6 @@ const HomeSlider: React.FC = () => {
                         alt={slides[currentSlide].alt}
                         fill
                         priority
-                        quality={90}
-                        sizes="(max-width: 1028px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover brightness-75"
                     />
                 </motion.div>

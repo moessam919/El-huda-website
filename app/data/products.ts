@@ -3,7 +3,8 @@
 export interface Product {
     id: string;
     name: string;
-    image: string;
+    image?: string;
+    imagess?: string[];
     description?: string;
     details: {
         origin?: string;
@@ -29,7 +30,11 @@ export const products: Product[] = [
     {
         id: "white-kidney-beans",
         name: "White kidney beans",
-        image: "/WhiteKidneyBeans.png",
+        imagess: [
+            "/WhiteKidneyBeans.jpeg",
+            "/WhiteKidneyBeans1.jpeg",
+            "/WhiteKidneyBeans2.jpg",
+        ],
         description:
             "White kidney beans, also known as Navy Beans, are one of the most nutritious and versatile legumes. They are rich in plant-based protein, fiber, and essential vitamins such as B vitamins, iron, and magnesium. These beans are widely used in soups, stews, salads, and various international cuisines, making them a staple in kitchens around the world.",
         details: {
@@ -53,7 +58,7 @@ export const products: Product[] = [
     {
         id: "broad-beans",
         name: "Broad beans",
-        image: "/BroadBeans.png",
+        imagess: ["/BroadBeans.jpeg", "/BroadBeans1.jpg", "/BroadBeans2.jpg"],
         details: {
             origin: "Egypt",
             color: "Light brown to beige",
@@ -70,7 +75,11 @@ export const products: Product[] = [
     {
         id: "split-broad-beans",
         name: "Split broad beans",
-        image: "/SplitBroadBeans.png",
+        imagess: [
+            "/SplitBroadBeans.jpg",
+            "/SplitBroadBeans1.jpeg",
+            "/SplitBroadBeans2.jpg",
+        ],
         details: {
             origin: "Egypt",
             color: "Light yellow to beige",
@@ -87,7 +96,11 @@ export const products: Product[] = [
     {
         id: "split-fava-beans",
         name: "Split Fava beans",
-        image: "/SplitFavaBeans.png",
+        imagess: [
+            "/SplitFavaBeans.jpeg",
+            "/SplitFavaBeans1.jpeg",
+            "/SplitFavaBeans2.jpeg",
+        ],
         details: {
             origin: "Lithuanian",
             cultivation: "common",
@@ -105,7 +118,11 @@ export const products: Product[] = [
     {
         id: "sun-flower-seeds",
         name: "Sun flower seeds",
-        image: "/SunFlowerSeeds.png",
+        imagess: [
+            "/SunFlowerSeeds.jpeg",
+            "/SunFlowerSeeds1.jpeg",
+            "/SunFlowerSeeds2.jpeg",
+        ],
         details: {
             size: "20/64, 22/64, 24/64",
             purity: "99% minimum",
@@ -120,7 +137,11 @@ export const products: Product[] = [
     {
         id: "watermelon-seeds",
         name: "Watermelon seeds",
-        image: "/WatermelonSeeds.png",
+        imagess: [
+            "/WatermelonSeeds.jpeg",
+            "/WatermelonSeeds1.jpeg",
+            "/WatermelonSeeds2.jpeg",
+        ],
         details: {
             origin: "Egypt",
             color: "light brown",
@@ -134,7 +155,11 @@ export const products: Product[] = [
     {
         id: "pumpkin-seeds",
         name: "Pumpkin seeds",
-        image: "/PumpkinSeeds.png",
+        imagess: [
+            "/PumpkinSeeds.jfif",
+            "/PumpkinSeeds1.jfif",
+            "/PumpkinSeeds2.jfif",
+        ],
         details: {
             origin: "Egypt",
             size: "9-10 mm",
@@ -147,8 +172,12 @@ export const products: Product[] = [
     },
     {
         id: "sesame-seeds",
-        name: "Sesame seeds",
-        image: "/SesameSeeds.png",
+        name: "Golden Sesame seeds",
+        imagess: [
+            "/SesameSeeds.jFif",
+            "/SesameSeeds1.jFif",
+            "/SesameSeeds2.jFif",
+        ],
         details: {
             variety: "Golden (Camel tail)",
             season: "Aug - Sep",
@@ -163,7 +192,11 @@ export const products: Product[] = [
     {
         id: "fennel-seeds",
         name: "Fennel seeds",
-        image: "/FennelSeeds.png",
+        imagess: [
+            "/FennelSeeds.jpeg",
+            "/FennelSeeds1.jpeg",
+            "/FennelSeeds2.jpeg",
+        ],
         details: {
             season: "May",
             availability: "Whole Year",
@@ -178,7 +211,11 @@ export const products: Product[] = [
     {
         id: "caraway-seeds",
         name: "Caraway seeds",
-        image: "/CarawaySeeds.png",
+        imagess: [
+            "/CarawaySeeds.jpeg",
+            "/CarawaySeeds1.jpeg",
+            "/CarawaySeeds2.jpeg",
+        ],
         details: {
             season: "May-Jun",
             availability: "Whole Year",
@@ -193,7 +230,7 @@ export const products: Product[] = [
     {
         id: "anise-seeds",
         name: "Anise seeds",
-        image: "/AniseSeeds.png",
+        imagess: ["/AniseSeeds.jpeg", "/AniseSeeds1.jpeg", "/AniseSeeds2.jpeg"],
         details: {
             season: "Apr - May",
             availability: "Whole Year",
@@ -211,68 +248,68 @@ export const mainProducts: Product[] = [
     {
         id: "white-kidney-beans",
         name: "White kidney beans",
-        image: "/WhiteKidneyBeans.png",
+        image: "/WhiteKidneyBeans.jpeg",
 
         details: {},
     },
     {
         id: "broad-beans",
         name: "Broad beans",
-        image: "/BroadBeans.png",
+        image: "/BroadBeans.jpeg",
         details: {},
     },
     {
         id: "split-broad-beans",
         name: "Split broad beans",
-        image: "/SplitBroadBeans.png",
+        image: "/SplitBroadBeans.jpg",
         details: {},
     },
     {
         id: "split-fava-beans",
         name: "Split Fava beans",
-        image: "/SplitFavaBeans.png",
+        image: "/SplitFavaBeans.jpeg",
         details: {},
     },
     {
         id: "sun-flower-seeds",
         name: "Sun flower seeds",
-        image: "/SunFlowerSeeds.png",
+        image: "/SunFlowerSeeds.jpeg",
         details: {},
     },
     {
         id: "watermelon-seeds",
         name: "Watermelon seeds",
-        image: "/WatermelonSeeds.png",
+        image: "/WatermelonSeeds.jpeg",
         details: {},
     },
     {
         id: "pumpkin-seeds",
         name: "Pumpkin seeds",
-        image: "/PumpkinSeeds.png",
+        image: "/PumpkinSeeds.jfif",
         details: {},
     },
     {
         id: "sesame-seeds",
-        name: "Sesame seeds",
-        image: "/SesameSeeds.png",
+        name: "Golden Sesame seeds",
+        image: "/SesameSeeds.jFif",
         details: {},
     },
     {
         id: "fennel-seeds",
         name: "Fennel seeds",
-        image: "/FennelSeeds.png",
+        image: "/FennelSeeds.jpeg",
         details: {},
     },
     {
         id: "caraway-seeds",
         name: "Caraway seeds",
-        image: "/CarawaySeeds.png",
+        image: "/CarawaySeeds.jpeg",
         details: {},
     },
     {
         id: "anise-seeds",
         name: "Anise seeds",
-        image: "/AniseSeeds.png",
+        image: "/AniseSeeds.jpeg",
         details: {},
     },
 ];

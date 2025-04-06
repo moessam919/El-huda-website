@@ -1,3 +1,4 @@
+import ProductGallery from "@/app/Components/ProductGallery";
 import { Product, products } from "@/app/data/products";
 import Image from "next/image";
 import Link from "next/link";
@@ -62,36 +63,10 @@ export default async function ProductDetailPage({ params }: PageProps) {
             {/* Product Container */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 {/* Product Gallery */}
-                <div className="space-y-4">
-                    <div className="relative aspect-square rounded-xl bg-gray-100 overflow-hidden shadow-lg">
-                        <Image
-                            src={product.image}
-                            alt={product.name}
-                            fill
-                            className="object-cover"
-                            priority
-                            sizes="(max-width: 1024px) 100vw, 50vw"
-                        />
-                    </div>
-                    <div className="grid grid-cols-4 gap-3">
-                        {/* Placeholder for additional images */}
-                        {[1, 2, 3, 4].map((i) => (
-                            <div
-                                key={i}
-                                className="relative aspect-square bg-gray-100 rounded-md overflow-hidden"
-                            >
-                                {i === 1 && (
-                                    <Image
-                                        src={product.image}
-                                        alt={`${product.name} thumbnail ${i}`}
-                                        fill
-                                        className="object-cover opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
-                                    />
-                                )}
-                            </div>
-                        ))}
-                    </div>
-                </div>
+                <ProductGallery
+                    imagess={product.imagess ?? []}
+                    productName={product.name}
+                />
 
                 {/* Product Info */}
                 <div className="space-y-8">
@@ -194,7 +169,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
                             >
                                 <div className="relative aspect-square bg-gray-100 rounded-lg overflow-hidden mb-3">
                                     <Image
-                                        src={related.image}
+                                        src={related.imagess?.[0] ?? ""}
                                         alt={related.name}
                                         fill
                                         className="object-cover group-hover:scale-105 transition-transform"
