@@ -156,9 +156,9 @@ export const products: Product[] = [
         id: "pumpkin-seeds",
         name: "Pumpkin seeds",
         imagess: [
-            "/PumpkinSeeds.jfif",
-            "/PumpkinSeeds1.jfif",
-            "/PumpkinSeeds2.jfif",
+            "/PumpkinSeeds.jpg",
+            "/PumpkinSeeds1.jpg",
+            "/PumpkinSeeds2.jpg",
         ],
         details: {
             origin: "Egypt",
@@ -174,9 +174,9 @@ export const products: Product[] = [
         id: "sesame-seeds",
         name: "Golden Sesame seeds",
         imagess: [
-            "/SesameSeeds.jFif",
-            "/SesameSeeds1.jFif",
-            "/SesameSeeds2.jFif",
+            "/SesameSeeds.jpg",
+            "/SesameSeeds1.jpg",
+            "/SesameSeeds2.jpg",
         ],
         details: {
             variety: "Golden (Camel tail)",
@@ -285,13 +285,13 @@ export const mainProducts: Product[] = [
     {
         id: "pumpkin-seeds",
         name: "Pumpkin seeds",
-        image: "/PumpkinSeeds.jfif",
+        image: "/PumpkinSeeds.jpg",
         details: {},
     },
     {
         id: "sesame-seeds",
         name: "Golden Sesame seeds",
-        image: "/SesameSeeds.jfif",
+        image: "/SesameSeeds.jpg",
         details: {},
     },
     {
